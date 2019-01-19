@@ -1,0 +1,109 @@
+1.#Program to print two different strings “Hello” and “World” in different lines.
+
+print("Hello")
+print("World")
+
+2.#Program to print two different strings “Hello” and “World” in a single line.
+
+print("Hello World")
+
+3.#Program to add two entered integer values enter by user.
+
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+s=a+b
+print("sum=",s)
+
+4.#Program to subtract two entered integer values.
+
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+s=a-b
+print(s)
+
+5.#Program to multiply two entered integer values.
+
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+m=a*b
+print(m)
+
+6.#Program to input two integer values and calculate first number raised to the power second number.
+
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+p=a**b
+print(p)
+
+7.#Program to find the area and perimeter of a rectangle, when the required input (Length and Breadth) are entered by the user.
+
+l=int(input("Enter the lenth of rectanglr:"))
+b=int(input("Enter the breadth of rectangle:"))
+a=l*b
+p=2*(l+b)
+print("Area of ractangle is=",a)
+print("perimeter of ractangle is=",p)
+
+8.#Program to find the area and circumference of a circle, when the radius is entered by the user. However, the user can input radius in integer or float.
+
+r=eval(input("Enter radius of the circle:"))
+a=3.14*r*r
+c=2*3.14*r
+print("Area of the circle is=",a)
+print("circumference of the circle is=",c)
+
+9.#Program to find the hypotenuse of a right angled triangle, when the base and height are entered by the user.
+
+b=int(input("Enter the base of the the right angle triangle:"))
+h=int(input("Enter the hight of the right angle triangle"))
+hy=(b*b+h*h)**0.5
+print("hypotenuse is=",hy)
+
+10.#Program to input two numbers and print the swapped values of them.
+
+x=int(input("Enter the first number:"))
+y=int("Enter the second number:")
+x,y=y,x
+print(x,y)
+
+11.#Program to find the number of currency notes of each type (Rs. 2000, Rs. 500 and Rs. 100),
+when the total number of currency notes counted altogether is minimum and there must be at
+least a 100 rupee note dispensed. The amount to be withdrawn is to be entered by the user.
+
+n=int(input("Enter the amount"))
+t=n//2000
+n=n%2000
+h=n//500
+n=n%500
+k=n//100
+print(t h k)
+
+12.#Program to find whether a triangle is scalene, isosceles, right angled orinvalid when the sides of
+the triangle are entered by the user.
+
+a=int(input("Enter the first side of the triangle:"))
+b=int(input("Enter the second side:"))
+c=int(input("Entr the third side:"))
+if a+b>c or b+c>a or c+a>b:
+	elif a=b and b=c and c=a:
+		print("Isoceles")
+	elif a=(b*b+c*c)**0.5 or b=(a*a+c*c)**0.5 or c=(a*a+b*b)**0.5:
+		print("Right angle triangle")
+else:
+	print("Scalene")
+
+13.#Program to find the Simple Interest and the total amount when the Principal, Rate of Interest
+and Time are entered by the user.
+
+p,ri=eval(input("enter principle amount and rate of interest:"))
+t=int(input("Enter the time:"))
+si=(p*ri*t)/100
+print("Simple intreste is=",si)
+
+14.#program to enter a number of user to find even or odd.
+
+n=int(input("Enter the number:"))
+if n%2==0:
+	print("Even")
+else:
+	print("odd")
